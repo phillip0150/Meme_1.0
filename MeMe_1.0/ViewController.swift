@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MeMe_1.0
 //
-//  Created by Phillip Valdez on 4/18/18.
+//  Created by Phillip Valdez on 4/12/18.
 //  Copyright © 2018 Phillip Valdez. All rights reserved.
 //
 import UIKit
@@ -25,12 +25,12 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        shareButton.isEnabled = false
         
+        shareButton.isEnabled = false
         isCameraEnable()
         setupTextField(textField: topText, text: "TOP")
         setupTextField(textField: bottomText, text: "BOTTOM")
-        
+
         //Blank image
         imagePicker.image = UIImage(named: "Blank.png")
         
@@ -190,7 +190,6 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
